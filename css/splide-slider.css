@@ -1,0 +1,38 @@
+.splide__track{
+    background-color: black;
+}
+.splide__slide{
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    /* background-color: black; */
+    color: white;
+}
+.card_details{
+    padding: 80px;
+    z-index: 10;
+}
+.card_image{
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+    background-blend-mode: color-dodge;
+    background:rgba(0,0,0,0.6);
+    opacity:0.6;}
+.splide__track{
+    width: 100%;
+    height: 100%;
+
+}
