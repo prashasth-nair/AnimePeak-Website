@@ -1,7 +1,16 @@
-.splide__track{
-    background-color: black;
+.br_splide{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
 }
-.splide__slide{
+.br_splide__track{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+.br_splide__slide{
     display: flex;
     justify-content: end;
     flex-direction: column;
@@ -12,7 +21,6 @@
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    /* background-color: black; */
     color: white;
 }
 .card_details{
@@ -30,9 +38,5 @@
     z-index: -1;
     background-blend-mode: color-dodge;
     background:rgba(0,0,0,0.6);
-    opacity:0.6;}
-.splide__track{
-    width: 100%;
-    height: 100%;
-
+    opacity:0.6;
 }

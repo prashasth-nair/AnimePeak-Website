@@ -1,11 +1,11 @@
-`<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self' https://gogocdn.net/ https://api-consumet-org-eta-one.vercel.app/ 'unsafe-inline' ; script-src 'self' https://cdn.jsdelivr.net/ https://api-consumet-org-eta-one.vercel.app/ 'unsafe-inline' ; connect-src 'self' https://api-consumet-org-eta-one.vercel.app/ 'unsafe-inline' ;"
+      content="default-src 'self' https://gogocdn.net/ https://consumet-five-lemon.vercel.app/ 'unsafe-inline' ; script-src 'self' https://cdn.jsdelivr.net/ https://consumet-five-lemon.vercel.app/ 'unsafe-inline' ; connect-src 'self' https://consumet-five-lemon.vercel.app/ 'unsafe-inline' ;"
     />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,71 +21,118 @@
   </head>
   <body>
     <div class="container">
-      <div class="sidebar">
-        <header class="header">
-          <nav class="navbar">
-            <div class="left-icons">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="1.6em"
-                viewBox="0 0 448 512"
-              >
-                <style>
-                  svg {
-                    fill: #ffffff;
-                  }
-                </style>
-                <path
-                  d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
-                />
-              </svg>
-            </div>
-            <ul class="menu">
-              <li>Home</li>
-              <li>Random</li>
-              <li>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="1em"
-                  viewBox="0 0 448 512"
-                >
-                  <style>
-                    svg {
-                      fill: #ffffff;
-                    }
-                  </style>
-                  <path
-                    d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z"
-                  />
-                </svg>
+      <nav class="navbar">
+        <div class="left-icons">
+          <!-- Hamburger menu -->
+          <div class="ham">
+            <svg
+              xmlns="http:/s/www.w3.org/2000/svg"
+              height="1.3em"
+              viewBox="0 0 448 512"
+            >
+              <style>
+                svg {
+                  fill: #ffffff;
+                }
+              </style>
+              <path
+                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+              />
+            </svg>
+          </div>
+        </div>
+        <ul class="menu">
+          <li class="search">
+            <img
+              title="search"
+              src="icons/search.png"
+              style="height: 1.2em; filter: invert(100%)"
+            />
+          </li>
+          <li class="shuffle">
+            <img src="icons/shuffle.png" title="Random"style="height: 1.3em; filter:
+            invert(100%);"/>
+          </li>
+          <li class="bell">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1.1em"
+              viewBox="0 0 448 512"
+            >
+            <title>Notification</title>
+
+              <style>
+                svg {
+                  fill: #ffffff;
+                }
+              </style>
+              <path
+                d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z"
+              />
+            </svg>
+          </li>
+          <li>
+            <img src="icons/boy1.jpg" title="P"style="height: 2em; border-radius: 50%" />
+          </li>
+        </ul>
+      </nav>
+      <div class="br">
+        <section
+          class="splide br_splide"
+          aria-label="Splide Basic HTML Example">
+          <div class="splide__track br_splide__track">
+            <ul class="splide__list br_splide__list">
+              <li class="splide__slide br_splide__slide">
+                <div
+                  class="splide_content br_splide_content"
+                  id="slide-1"
+                ></div>
               </li>
-              <li>Profile</li>
+              <li class="splide__slide br_splide__slide">Slide 02</li>
+              <li class="splide__slide br_splide__slide">Slide 03</li>
             </ul>
-          </nav>
-        </header>
+          </div>
+        </section>
       </div>
-      <div class="big_row">
-        <section class="splide" aria-label="Splide Basic HTML Example">
-          <div class="splide__track">
-            <ul class="splide__list">
-              <li class="splide__slide">
-                <div class="splide_content" id="slide-1">
-                  
-                </div>
-              </li>
-              <li class="splide__slide">Slide 02</li>
-              <li class="splide__slide">Slide 03</li>
+      <div class="trending-row">
+        <section
+          class="splide trending-splide"
+          aria-label="Splide Basic HTML Example"
+        >
+          <div class="splide__track trending-splide__track">
+            <ul class="splide__list trending-splide__list">
+              <li class="splide__slide trending-splide__slide">Slide 01</li>
+              <li class="splide__slide trending-splide__slide">Slide 02</li>
+              <li class="splide__slide trending-splide__slide">Slide 03</li>
+              <li class="splide__slide trending-splide__slide">Slide 04</li>
+              <li class="splide__slide trending-splide__slide">Slide 05</li>
+              <li class="splide__slide trending-splide__slide">Slide 06</li>
+              <li class="splide__slide trending-splide__slide">Slide 07</li>
+              <li class="splide__slide trending-splide__slide">Slide 08</li>
             </ul>
           </div>
         </section>
       </div>
     </div>
+    <!-- ========================= -->
+    <div class="splide__track recommended">
+      <div class="splide_list rec"></div>
+    </div>
+
     <script src="splide-4.1.3/splide-4.1.3/dist/js/splide.min.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        var splide = new Splide(".splide");
-        splide.mount();
+        var splide1 = new Splide(".br_splide");
+        splide1.mount();
       });
+      var splide2 = new Splide(".trending-splide", {
+        drag: "free",
+        perPage: 6,
+        focus: 0,
+        omitEnd: true,
+      });
+
+      splide2.mount();
     </script>
     <script type="module" src="javascript/script.js"></script>
   </body>
